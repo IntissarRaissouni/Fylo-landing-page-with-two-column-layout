@@ -235,6 +235,10 @@ form.form-top p{
   height: 10rem;
   width: min(114rem, 98.8vw);
 }
+.bottom-section {
+  position: relative;
+  background-color: hsl(240, 63%, 98%);
+}
 .bottom-section{
   display: grid;
   grid-template-columns: 1.1fr .9fr;
@@ -243,15 +247,20 @@ form.form-top p{
   margin-bottom: -4rem;
   padding-top: 4rem;
 }
+/* left bottom section */
+.left-bottom-container {
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
 .second-title-container{
   font-family: var(--ff-primary);
   font-weight: var(--fw-primary-700);
   margin: 1rem 0;
 }
-.second-paraghraphe-container{
+.second-paragraphe-container{
   max-width: 33rem;
 }
-.second-paraghraphe-container p{
+.second-paragraphe-container p{
   font-family: var(--ff-secondary);
   font-weight: var(--fw-secondary-400);
   color: var(--primary-500);
@@ -315,3 +324,169 @@ form.form-top p{
 }
 
 /* Footer Styling*/
+
+/* Footer top */
+.top-footer-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--primary-500);
+padding-top: 6rem;
+padding-bottom: 4rem;
+}
+
+/* Footter top left*/
+.left-top-footer-section{
+  margin-left: 4rem;
+  max-width: 31rem;
+}
+.left-top-footer-section h2{
+  color: var(--neutral-100);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-primary-700);
+  font-size: 1.9rem;
+  margin-top: -.6rem;
+  margin-bottom: .8rem;
+}
+.left-top-footer-section p {
+  color: var(--neutral-200);
+  font-family: var(--ff-secondary);
+}
+/* footer right top */
+.right-top-footer-section{
+  margin-right: 7rem;
+}
+.right-top-footer-section form{
+  margin-left: calc(30% + 0vw);
+}
+.right-top-footer-section form input {
+  width: 100%;
+  border: 1px solid var(--primary-500);
+  padding: .5rem 1rem;
+  margin-right: min(2%, .5rem);
+  border-radius: .2rem;
+}
+.right-top-footer-section form input ::placeholder{
+  color: var(--neutral-200);
+  font-size: .8rem;
+  font-weight: var(--fw-secondary-400);
+  font-family: var(--ff-secondary);
+}
+.error-msg-two {
+  color: var(--neutral-200);
+  font-size: .8rem;
+  font-weight: var(--fw-secondary-400);
+  font-family: var(--ff-secondary);
+  margin-top: .2rem;
+  margin-bottom: -.2rem;
+}
+.right-top-footer-section form button{
+  padding: .67rem;
+  width: 11rem;
+  background-color: var(--accent-400);
+  border: none;
+  border-radius: .2rem;
+  color: var(--neutral-100);
+  font-weight: var(--fw-secondary-400);
+  font-family: var(--ff-secondary);
+  font-size: .7rem;
+  margin-top: 1rem;
+}
+
+/* Footer bottom */
+.bottom-footer-section{
+  background-color: var(--primary-600);
+  color: var(--neutral-200);
+  font-family: var(--ff-secondary);
+  padding: 6rem 4rem;
+}
+
+.bottom-footer-section-without-logo{
+  display: grid;
+  grid-template-columns: repeat(4,max-content);
+  gap: 15%;
+}
+.bottom-list li{
+  list-style: none;
+  margin: 1rem 0;
+}
+.logo{
+  margin: 1rem 0;
+}
+.bottom-list{
+  list-style: none;
+padding: 0;
+margin: 0;
+}
+.bottom-list li a{
+  text-decoration: none;
+  color: var(--neutral-200);
+  font-family: var(--ff-secondary);
+}
+.phone, .email{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.footer-left-icons{
+  margin-right: 1rem;
+}
+.social-networks{
+  display: flex;
+}
+.social-icons{
+  width: 30px;
+  margin: 0 .4rem;
+}
+input[state="error"] {
+  border: 2px solid hsl(341, 48%, 67%) !important;
+}
+@media (hover: hover){
+  .second-submit:hover, .first-submit:hover{
+          cursor: pointer;
+          background-color: hsl(221, 100%, 71%);
+  }
+  .second-section-link-container:hover .see-how-fylo-works-link{
+      color:hsl(170, 45%, 70%);
+
+  }
+  .bottom-list li:hover a {
+      color: hsl(231, 39%, 60%);
+  }
+  .social-media-icons:hover{
+      cursor: pointer;
+  }
+  .facebook:hover {
+      content: url('./images/facebook-hover.svg');
+  }
+  .twitter:hover {
+      content: url('./images/twitter-hover.svg');
+  }
+  .instagram:hover {
+      content: url('./images/instagram-hover.svg');
+  }
+
+}
+/* Second submit*/
+.second-submit:active, .first-submit:active{
+  cursor: pointer;
+  background-color: hsl(221, 100%, 71%);
+}
+.second-section-link-container:active .see-how-fylo-works-link{
+color:hsl(170, 45%, 70%);
+
+}
+.bottom-list li:active a {
+color: hsl(231, 39%, 60%);
+}
+.social-media-icons:active{
+cursor: pointer;
+}
+.facebook:active {
+content: url('./images/facebook-hover.svg');
+}
+.twitter:active {
+content: url('./images/twitter-hover.svg');
+}
+.instagram:active {
+content: url('./images/instagram-hover.svg');
+}
